@@ -33,6 +33,10 @@
 <div align="center">
     <h1>Edit User Registration</h1>
     <form action="#" th:action="@{/register}" th:object="${user}" method="post">
+
+        <label>User ID :</label>
+        <input type="text" th:field="*{id}" readonly="readonly"/><br>
+
         <label>Full Name :</label>
         <input type="text" th:field="*{name}"/><br>
 
